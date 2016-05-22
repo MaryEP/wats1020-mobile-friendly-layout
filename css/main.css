@@ -1,8 +1,96 @@
-
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+body {
+ padding: 20px;
+ position: relative;
+ }
+
+.nav-bar {
+      top: 20px;
+      position: relative;
+  }
+
+h1 {
+  padding-top: 25px;
+}
+h2 {
+  text-align: center;
+}
+
+#home img {
+  padding: 10px;
+  width: 90%;
+  alignment-baseline: top;
+  
+}
+
+#home {
+  border: black solid 1px;
+  padding: 20px;
+}
+
+ div.col-sm-9 div {
+      height: 250px;
+      font-size: 28px;
+  }
+  /*#home {color: #fff; background-color: #1E88E5;}*/
+  #map {color: black; background-color: lightyellow;}
+  #patients {color: #fff; background-color: #673ab7; padding: 20px;}
+  #research {color: #fff; background-color: #ff9800;}
+  #resources {color: #fff; background-color: #00bcd4;}
+  #contactus {color: black; background-color: white; border: solid black 1px; padding: 20px;}
+  
+  @media screen and (max-width: 1200px) {
+    #home, #map, #patients, #research, #resources, #contactus  {
+        margin-left: 5px;
+    }
+  }
+/*//810px  margin-left was 150px */
+
+@media (min-width: 768px)and(min-height: 600px){
+  #container {
+    width: 100%;
+}
+
+  .navbar {
+   height: 25px;
+  }
+  
+  
+
+p {
+  font-size:16px;
+}
+
+.carousel-inner img {
+  display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.carousel-caption h3  {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.item p {
+  font-weight: bold;
+}
+
+#map { 
+  height: 400px; 
+  width: 900px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+}
+  
+  
+  
+
 
 
 

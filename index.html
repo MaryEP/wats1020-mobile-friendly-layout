@@ -12,44 +12,252 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <style>
-            body {
-                padding-top: 50px;
-                padding-bottom: 20px;
-            }
-        </style>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
+      <div id ="container">
+        
       <!-- TODO:
-
                 Create a mobile friendly page header. This may be a navigation
                 bar, but it does not have to be a navigation bar. In fact, it
                 may be more beneficial to try to mock up something more like
                 what you hope to see in your final projects header (title, score,
                 etc.).
       -->
+      
+  
+  <div class="container-fluid">  
+  <nav class="navbar navbar-default navbar-fixed-top">    
+ 
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+        <span class="icon-bar"></span> 
+        <span class="icon-bar"></span> 
+        <span class="icon-bar"></span>
+      </button>
+    
+    <div class="collapse navbar-collapse" id="myNavbar">
+    <nav class="col-lg-12 col-md-8 col-sm-8 col-xs-4" id="myScrollspy">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#home">Home</a></li>
+      <li><a href="#map">Map</a></li>
+      <li><a href="#patients">Patients</a></li>
+      <li><a href="#research">Research</a></li> 
+      <li><a href="#resources">Resources</a></li> 
+      <li><a href="#contactus">Contact Us</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Doctor Sign In</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Patient Log In</a></li>
+    </ul>
+      </nav>
+  </div>
+   </nav> 
+</div>
+        
+   
+        
+        <div class="container">
+        <h1>The Spider Hospital</h1>
+  </div>
+        <div id="home">
+          <h2>
+            Mission Statement
+          </h2>
+          <!--two bootstrap columns  - one for mission statement and one for the key spider image ...-->
+          <div class="container-fluid">
+          <div class="row">
+          <div class="col-sm-6"><!--Column left--><p class="mission">The spider hospital and more text here ...Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+          <div class="col-sm-6"><!--Column right--> 
+           <img src="img/4legged-spider.jpg" alt="spider with only 4 legs">
+           </div>
+            
+             
+       </div>
+               </div>
+             </div>
 
-      <!-- TODO:
+   <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h2 id="webs">Award Winning Webs</h2>
+     
+        <!-- TODO:HTML Bootstrap carousel feature.http://getbootstrap.com/javascript/#carousel-->
 
-                Create a mobile friendly gallery layout that displays a set of
-                at least 24 images. Each image should be displayed along with some
-                metadata: title of image and a brief description. You may use
-                placeholder text (see http://lipsum.com) for both if you do not
-                have titles or descriptions available.
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+  </ol>
+ 
+ 
+  <div class="carousel-inner" role="listbox">
+   
+    <div class="item active">
+      <img src="img/orange-spider-on-web.jpg" alt="orange spider hanging on a web"> 
+      <div class="carousel-caption">
+        <h3>Rule 1</h3>
+        <p>Look in the teapot ...</p>
+      </div>
+    </div>
+    
+    <div class="item">
+      <img src="img/spider-back.jpg" alt="spider on web, from back">
+      <div class="carousel-caption">
+        <h3>Rule 2</h3>
+        <p>Be careful!</p>
+      </div>
+    </div>
+    
+    <div class="item">
+      <img src="img/spider-on-log.jpg" alt="close up of spider on log">
+      <div class="carousel-caption">
+        <h3>Rule 3</h3>
+        <p>hey!</p>
+      </div>
+    </div>
+    
+    
+    <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  </div>
+     </div>
+       </div>
+       </div>
+        
+        
+        
+    <div class="jumbotron">
+      <div class="container-fluid">
+        <h2 id="rules">Rules for the Care of Spiders</h2>
+      </div>    
+      </div>   
+        
+        
+        
+        
+        
+        <!-- The lower scroll area -->
+ <div id="sections">
+      <!-- The navbar - The <a> elements are used to jump to a section in the scrollable area -->
 
-                You may use any HTML structures you want, and this file has
-                Bootstrap linked in, so you may use the responsive layout and
-                image tools that Bootstrap includes.
-      -->
+<div data-spy="scroll" data-target="#myScrollspy" data-offset="10"> 
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 col-md-6 col-sm-4 col-xs-4">
+      </div>
+     </div>
+    
+    
+    
+ <div id="map">
+      
+      <div class="container-fluid">
+          <div class="row">
+          <div class="col-xs-8">
+              <h1>Map</h1>
+              <p>Directions and map to the Spider Hospital here</p>
+          </div> 
+            
+          <div class="col-xs-4"> 
+            <p>The Spider Hospital appreciates your support. Our policy is to turn no spider away.</p>
+            <button type="button" class="btn btn-success btn-lg">Donate Now!</button> 
+           </div>
+           </div>
+              
+     
+ 
+       
+                    <!--http://leafletjs.com/examples/quick-start.html -->
+        
+          
+       </div>
+ </div>
+      
+   
+    
+    
+    
+    
+      <div id="patients">    
+        <h1>Patients</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!
+        Try to scroll this section and look at the navigation list while scrolling!
+          Try to scroll this section and look at the navigation list while scrolling!
+          Try to scroll this section and look at the navigation list while scrolling!
+          Try to scroll this section and look at the navigation list while scrolling!
+          Try to scroll this section and look at the navigation list while scrolling!
+          Try to scroll this section and look at the navigation list while scrolling!
+       </p>
+      </div>
+      <div id="research"> 
+        <h1>Research</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+      </div>        
+      <div id="resources">         
+        <h1>Resources</h1>
+        <p>add some resource info here</p>
+        <p class="lead">Learn more about the care of spiders by visiting these websites:</p>
+        <ul class="links-list">
+          <li><a href="http://www.">spider Page</a></li>
+          <li><a href="http://"> Wikipedia Page</a></li>
+          <li><a href="http://.com/"> Page</a></li>
+          <li><a href="https://.html">here</a></li>
+        </ul>
+          
+      </div>
+    
+      <div id="contactus">         
+        <h1>Contact Us</h1>
+        <div class="contact-form">
+    <form>
+        <div class="form-group">
+            <label for="inputEmail">Email</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <label for="inputName">Name</label>
+            <input type="name" class="form-control" id="inputName" placeholder="Name">
+        </div>
+        <div class="checkbox">
+            <label><input type="checkbox"> Add me to email notifications list</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+    </form>
+</div>
+        
+      </div>      
+           
+    </div>
+  </div>
+  </div>
+  
 
+
+
+
+   
+      
+      
       <!-- TODO:
 
                 Create a mobile-friendly Footer that includes three columns. The
@@ -74,13 +282,42 @@
                   table with imaginary player names and high scores. The table
                   should have two columns: name and score.
       -->
-
+<div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4">
+                <h2>title</h2>
+                <p>some stuff here.</p>
+                <p><a href="http://www." target="_blank" class="btn btn-success">Learn More</a></p>
+            </div>
+            <div class="col-xs-4">
+                <h2>maybe more?</h2>
+                <p>content needed??</p>
+                <p><a href="http://www." target="_blank" class="btn btn-success">Even More &raquo;</a></p>
+            </div>
+            <div class="col-xs-4">
+                <h2>placeholder</h2>
+                <p> webs</p>
+                <p><a href="http://www." target="_blank" class="btn btn-success">Learn</a></p>
+            </div>
+        </div>
+        
+                
+        </div>
+   
+    
+      <!--<hr> -->
+        <div class="row">
+            <div class="col-xs-12">
+      <footer>
+        
+        <p>&copy; story and site by Mary Pringle 2016</p>
+      </footer>
+       </div>
+           </div>
 
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
       <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
-
       <script src="js/vendor/bootstrap.min.js"></script>
-
       <script src="js/main.js"></script>
 
       <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -92,5 +329,10 @@
           r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
           ga('create','UA-XXXXX-X','auto');ga('send','pageview');
       </script>
-    </body>
+  
+ <!--end #container-->
+      
+      
+      </div>
+  </body>
 </html>
