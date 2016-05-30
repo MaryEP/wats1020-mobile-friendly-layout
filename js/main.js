@@ -10,18 +10,18 @@ $carousel.on('slid.bs.carousel', function(e) {
 });
   
   
-  // Add scrollspy to <body>
+  // Adds scrollspy to <body>
   $('body').scrollspy({target: ".navbar", offset: 50});   
 
-  // Add smooth scrolling on all links inside the navbar
+  // Adds smooth scrolling on all links inside the navbar
   $("#myNavbar a").on('click', function(event) {
 
-    // Prevent default anchor click behavior
+    // Prevents default anchor click behavior
     event.preventDefault();
 
     var hash = this.hash;
 
-    $('html, body').animate({ // animate for smooth scroll
+    $('html, body').animate({ // animates for smooth scroll
       scrollTop: $(hash).offset().top
     }, 800, function(){ //800 milliseconds to scroll
    
@@ -31,9 +31,6 @@ $carousel.on('slid.bs.carousel', function(e) {
   });
 
 
-
-
-  
 /////////////////////////////////
 //map from leaflet.js:
 var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
@@ -56,31 +53,21 @@ var mapLayers = {
     "Open Street Maps": osm
 }
 
-var map = L.map('map-container').setView([46.852, -121.760], 11); //13
+var map = L.map('map').setView([19.521611, -155.91887], 16); 
 L.control.layers(mapLayers).addTo(map);
-satLayer.addTo(map);
-//center: [coordinates or in .set view]
-//minZoom: 4;
-//zoom: 2
+drawLayer.addTo(map);
 
-var marker = L.marker([46.852, -121.760]).addTo(map);
-marker.bindPopup("<b>The top of Mt. Rainier!</b><br> 14,411 feet");
+var marker = L.marker([19.521611, -155.91887]).addTo(map);
+marker.bindPopup("<b>The Spider Hospital</b><br>Please call for exact location.");
 
-var marker2 = L.marker([46.849068, -121.712208]).addTo(map);
-marker2.bindPopup("<b>Little Tahoma Peak</b><br> 11,138 feet");
-
-var circle1 = L.circle([46.785486,-121.733322], 500, {
-    color: 'green',
-    fillColor: '#0f3',
-    fillOpacity: 0.5
-}).addTo(map);
-  circle1.bindPopup("Paradise");
-
-var circle2 = L.circle([46.83031, -121.726885], 500, {
-    color: 'green',
-    fillColor: '#0f3',
-    fillOpacity: 0.5
-
+$(function() {
+  $('[data-toggle="tooltip"]').tooltip();
 });
-});
+ 
 
+window.sr = ScrollReveal();
+sr.reveal('#patients');
+sr.reveal('#research');
+sr.reveal('#resources');
+  
+  });

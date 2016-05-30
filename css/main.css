@@ -7,16 +7,58 @@ body {
  position: relative;
  }
 
-.nav-bar {
-      top: 20px;
-      position: relative;
+header img {
+  background-image: no-repeat;
+  height: 250px;
+  display: block;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 10px darkorange;
+}
+
+.navbar {
+  height: 25px;
+  color: navy;
   }
 
-h1 {
-  padding-top: 25px;
+a {
+  color: greenyellow;
 }
-h2 {
+a:hover {
+color: orange;
+}
+
+/* research to work at in between sizes*/
+li:hover {
+  background-color: lightgreen;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Amatic SC', serif;
+}
+
+h1 {
+  font-size: 100px;
+  color: darkorange;
+  padding-top: 10px;
   text-align: center;
+}
+
+h2 {
+  font-size: 80px;
+  color: navy;
+  padding-top: 10px;
+  text-align: left;
+}
+h3 {
+  font-size: 60px;
+  color: white;
+  padding-top: 10px;
+  text-align: left;
+}
+h4 {
+font-size: 40px;
 }
 
 #home img {
@@ -27,7 +69,8 @@ h2 {
 }
 
 #home {
-  border: black solid 1px;
+  border-top: navy solid 1px;
+  border-bottom: orange solid 1px;
   padding: 20px;
 }
 
@@ -35,16 +78,17 @@ h2 {
       height: 250px;
       font-size: 28px;
   }
+
   /*#home {color: #fff; background-color: #1E88E5;}*/
-  #map {color: black; background-color: lightyellow;}
+  #map-container {color: black; }
   #patients {color: #fff; background-color: #673ab7; padding: 20px;}
-  #research {color: #fff; background-color: #ff9800;}
-  #resources {color: #fff; background-color: #00bcd4;}
+  #research {color: #fff; background-color: navy; padding: 20px;}
+  #resources {color: #fff; background-color: #00bcd4; padding: 20px;}
   #contactus {color: black; background-color: white; border: solid black 1px; padding: 20px;}
   
   @media screen and (max-width: 1200px) {
     #home, #map, #patients, #research, #resources, #contactus  {
-        margin-left: 5px;
+    margin-left: 5px;
     }
   }
 /*//810px  margin-left was 150px */
@@ -54,9 +98,7 @@ h2 {
     width: 100%;
 }
 
-  .navbar {
-   height: 25px;
-  }
+  
   
   
 
@@ -66,31 +108,89 @@ p {
 
 .carousel-inner img {
   display: block;
-    margin-left: auto;
-    margin-right: auto; 
+  margin-left: auto;
+  margin-right: auto; 
+  text-align: left;
+  
 }
-
+  .carousel-caption  {
+    position: relative;
+    left: auto;
+    right: auto;
+    color: navy;
+    padding: 7px;
+  }
+  
 .carousel-caption h3  {
   font-weight: bold;
-  text-decoration: underline;
+  text-decoration: none;
+  color: navy;
 }
 
 .item p {
   font-weight: bold;
+  color: navy;
+  text-align: left;
 }
 
 #map { 
-  height: 400px; 
-  width: 900px;
+  height: 300px; 
+  width: 300px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;
+  padding: 20px;
 }
   
+#donate {
+    display: block;
+    float: right;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+ 
+  }
   
+ /* img.donate {
+   padding-top: 40px;
+    padding-left: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }*/
   
+  button.btn {
+    margin-right: 75px;
+    margin-bottom: 20px;
+  }
 
+  /* add spider image and animate so it crawls across page:
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    -webkit-animation: spider 5s linear 2s infinite alternate; /* Chrome, Safari, Opera 
+    animation: spider 5s linear 2s infinite alternate;
+  animation-duration: 8s;
+    animation-iteration-count: 3;
+  animation-delay: 2s;
+}
+
+/* for Chrome, Safari, Opera 
+@-webkit-keyframes spider {
+    0%   {left:0px; top:0px;}
+    50%  {top:200px;}
+    75%  {top:200px;}
+    100% {top:0px;}
+}
+
+/* for Standard syntax 
+@keyframes spider {
+    0%   {left:0px; top:0px;}  
+    50%  {top:200px;}
+    75%  {top:200px;}
+    100% {top:0px;}
+}*/
 
 
 
