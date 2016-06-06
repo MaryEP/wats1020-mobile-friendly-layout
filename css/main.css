@@ -1,210 +1,311 @@
-/* ==========================================================================
-   Author's custom styles
+			/* ==========================================================================
+   Author's custom CSS
    ========================================================================== */
 
 body {
- padding: 20px;
- position: relative;
- }
+	padding: 20px;
+	position: relative;
+}
 
 header img {
-  background-image: no-repeat;
-  height: 250px;
-  display: block;
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  border: solid 10px darkorange;
+	background-image: no-repeat;
+	height: 250px;
+	display: block;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0;
+	padding: 0;
+	border: solid 5px darkorange;
+	box-shadow: 10px 10px grey;
+}
+
+.text-content {
+	display: none;
+	text-align: left;
+	vertical-align: text-top;
+	padding: 8px 0px 1px 0px;
+	font-family: verdana;
+}
+
+header img:hover + .text-content {
+	display: inline;
+	float: right;
+	height: 100px;
+	width: 450px;
+	cursor: pointer;
+	font-size: 18px;
+	opacity: 1;
+	color: orange;
+	-webkit-transition: opacity 500ms;
+	-moz-transition: opacity 500ms;
+	-o-transition: opacity 500ms;
+	transition: opacity 500ms;
+	text-shadow: 1px 1px grey;
 }
 
 .navbar {
-  height: 25px;
-  color: navy;
-  }
+	height: 25px;
+	color: navy;
+}
 
 a {
-  color: greenyellow;
+	color: greenyellow;
 }
+
 a:hover {
-color: orange;
+	color: darkblue;
 }
 
-/* research to work at in between sizes*/
+
 li:hover {
-  background-color: lightgreen;
+	background-color: orange;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Amatic SC', serif;
+/* this is the really cool Google font: */
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Amatic SC', serif;
 }
 
 h1 {
-  font-size: 100px;
-  color: darkorange;
-  padding-top: 10px;
-  text-align: center;
+	font-size: 140px;
+	color: darkorange;
+	text-shadow: 2px 2px 4px green;
+	padding-top: 0px;
+	text-align: center;
 }
 
 h2 {
-  font-size: 80px;
-  color: navy;
-  padding-top: 10px;
-  text-align: left;
+	font-size: 80px;
+	color: navy;
+	text-shadow: 2px 2px 4px greenyellow;
+	padding-top: 10px;
+	text-align: left;
 }
+
 h3 {
-  font-size: 60px;
-  color: white;
-  padding-top: 10px;
-  text-align: left;
+	font-size: 60px;
+	color: white;
+	padding-top: 10px;
+	text-align: left;
 }
+
 h4 {
-font-size: 40px;
+	font-size: 40px;
+}
+
+p  {
+	font-family: verdana, arial, sans-serif;
+	font-size: 16px;
+}
+
+li {
+	font-family: verdana, arial, sans-serif;
+	font-size: 14px;
 }
 
 #home img {
-  padding: 10px;
-  width: 90%;
-  alignment-baseline: top;
-  
+	padding: 10px;
+	width: 90%;
+	alignment-baseline: top;
 }
 
 #home {
-  border-top: navy solid 1px;
-  border-bottom: orange solid 1px;
-  padding: 20px;
+	border-top: navy solid 1px;
+	padding: 20px;
 }
 
- div.col-sm-9 div {
-      height: 250px;
-      font-size: 28px;
-  }
-
-  /*#home {color: #fff; background-color: #1E88E5;}*/
-  #map-container {color: black; }
-  #patients {color: #fff; background-color: #673ab7; padding: 20px;}
-  #research {color: #fff; background-color: navy; padding: 20px;}
-  #resources {color: #fff; background-color: #00bcd4; padding: 20px;}
-  #contactus {color: black; background-color: white; border: solid black 1px; padding: 20px;}
-  
-  @media screen and (max-width: 1200px) {
-    #home, #map, #patients, #research, #resources, #contactus  {
-    margin-left: 5px;
-    }
-  }
-/*//810px  margin-left was 150px */
-
-@media (min-width: 768px)and(min-height: 600px){
-  #container {
-    width: 100%;
+div.col-sm-9 div {
+	height: 250px;
+	font-size: 28px;
 }
 
-  
-  
-  
-
-p {
-  font-size:16px;
+#map-container {
+	color: black;
 }
 
-.carousel-inner img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto; 
-  text-align: left;
-  
-}
-  .carousel-caption  {
-    position: relative;
-    left: auto;
-    right: auto;
-    color: navy;
-    padding: 7px;
-  }
-  
-.carousel-caption h3  {
-  font-weight: bold;
-  text-decoration: none;
-  color: navy;
+#patients {
+	color: #fff;
+	background-color: #673ab7;
+	padding: 20px;
 }
 
-.item p {
-  font-weight: bold;
-  color: navy;
-  text-align: left;
+#research {
+	color: #fff;
+	background-color: navy;
+	padding: 20px;
 }
 
-#map { 
-  height: 300px; 
-  width: 300px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px;
-}
-  
-#donate {
-    display: block;
-    float: right;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
- 
-  }
-  
- /* img.donate {
-   padding-top: 40px;
-    padding-left: 20px;
-    margin-left: auto;
-    margin-right: auto;
-  }*/
-  
-  button.btn {
-    margin-right: 75px;
-    margin-bottom: 20px;
-  }
-
-  /* add spider image and animate so it crawls across page:
-div {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    position: relative;
-    -webkit-animation: spider 5s linear 2s infinite alternate; /* Chrome, Safari, Opera 
-    animation: spider 5s linear 2s infinite alternate;
-  animation-duration: 8s;
-    animation-iteration-count: 3;
-  animation-delay: 2s;
+#resources {
+	color: #fff;
+	background-color: #00bcd4;
+	padding: 20px;
 }
 
-/* for Chrome, Safari, Opera 
-@-webkit-keyframes spider {
-    0%   {left:0px; top:0px;}
-    50%  {top:200px;}
-    75%  {top:200px;}
-    100% {top:0px;}
+#contactus {
+	color: black;
+	background-color: white;
+	border: solid black 1px;
+	padding: 20px;
 }
 
-/* for Standard syntax 
-@keyframes spider {
-    0%   {left:0px; top:0px;}  
-    50%  {top:200px;}
-    75%  {top:200px;}
-    100% {top:0px;}
-}*/
+	.carousel-inner img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: left;
+	}
+	.carousel-caption {
+		position: relative;
+		left: auto;
+		right: auto;
+		color: navy;
+		padding: 7px;
+	}
+	.carousel-caption h3 {
+		font-weight: bold;
+		text-decoration: none;
+		color: navy;
+	}
+	
+	
+	/* this keeps the carousel from jumping around on the page*/
+	.carousel-inner {
+		height: 400px;
+	}
+	
+	.item p {
+		font-weight: bold;
+		color: navy;
+		text-align: left;
+	}
+	#map {
+		height: 350px;
+		width: 350px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 20px;
+	}
 
+	#donate {
+		display: block;
+		float: right;
+		margin-left: 70px; /*auto;*/
+		margin-right: auto;
+		padding: 20px;
+	}
+	
+#donate-image, #donate-button {
+	margin-left: 30px;
+}
+	
+	img {
+		margin-left: auto;
+		margin-right: auto;
+		text-align: left;
+		padding-right: 25px;
+	}
+	
+	
+	button.btn {
+		margin-right: 75px;
+		margin-bottom: 20px;
+	}
+	#more p {
+		padding-right: 20px;
+	}
 
+@media screen and (max-width: 1200px) {
+	#home,
+	#map, 
+	#patients,
+	#top-research, /*research*/
+	#resources,
+	#donate,
+	#contactus {
+		margin-left: 5px;
+	}
+}
 
+@media (min-width: 480px)and(min-height: 600px) { /* testing: changed min-width from 768px to 480px*/
+	#container {
+		width: 100%;
+	}
+}
 
+/* for  Contact Us validation: */
+.error-message-N, .error-message-E {
+	color: red;
+}
+	
+/* added spider images and animated so they crawl across page  */ 
+	.spider {
+    width: 10px;
+    height: 10px;
+    background-image: no-repeat;
+    position:relative;
+		-webkit-animation: mymove 5s infinite alternate; 
+    animation: mymove 5s infinite alternate;
+		animation-duration: 7s;
+    animation-delay: 0s;
+		}
+	
+	@-webkit-keyframes mymove {
+    0%   {top: 0px; left: 10px;}
+		12%  {top: 30px;}
+    25%  {top: 50px; right: 10px;}
+		50%  {top: 75px;}
+    75%  {top: 100px; left: 10px;}
+		85%  {top: 75px;}
+    100% {top: 50px; right: 10px;}
+}
+	@keyframes mymove {
+    0%   {top: 0px; left: 10px;}
+		12%  {top: 30px;}
+    25%  {top: 50px; right: 10px;}
+		50%  {top: 75px;}
+    75%  {top: 100px; left: 10px;}
+		85%  {top: 75px;}
+    100% {top: 50px; right: 10px;}
+}
+	
+	.brown-spider {
+    width: 10px;
+    height: 10px;
+    background-image: no-repeat;
+    position:relative;
+		-webkit-animation: spidymove 5s infinite alternate; 
+    animation: spidymove 5s infinite alternate;
+		animation-duration: 12s;
+    animation-delay: 0s;
+		z-index: 0;
+		}
+	
+	@-webkit-keyframes spidymove {
+    00%   {top: 25px; left: 550px;}
+		12%  {top: 25px; left: 650px;}
+    25%  {top: 25px; left: 750px;}
+		50%  {top: 25px; left: 850px;}
+    75%  {top: 25px; left: 900px;}
+		85%  {top: 25px; left: 950px;}
+    100% {top: 35px; left 750px;}
+}
+	@keyframes spidymove {
+    0%   {top: 25px; left: 550px;}
+		12%  {top: 25px; left: 650px;}
+    25%  {top: 25px; left: 750px;}
+		50%  {top: 25px; left: 850px;}
+    75%  {top: 25px; left: 900px;}
+		85%  {top: 25px; left: 950px;}
+    100% {top: 35px; left 750px;}
+}
+	
 
+	
+	
 
-
-
-
-
-
-
-
-
-
-
-
+			
